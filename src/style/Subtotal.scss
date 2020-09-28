@@ -1,0 +1,17 @@
+.subtotal {
+  @include box-shadow;
+  @include white-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 10rem;
+  padding: 2rem;
+
+  & > button {
+    @include yellow-button;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.8rem;
+  }
+}

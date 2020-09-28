@@ -1,0 +1,70 @@
+.shipping-address {
+  @include box-shadow;
+  @include white-box;
+  grid-column: content-s/content-e;
+  grid-row: content-s/content-e;
+  border: 1px solid transparent;
+  width: 100rem;
+  height: 55rem;
+  margin-top: -5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    width: 70%;
+    margin: 2rem 0;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 0.1rem solid lightgray;
+  }
+
+  &-form {
+    grid-row: m/e;
+    height: 40rem;
+    width: 70%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__address1,
+    &__address2,
+    &__small-inputs,
+    &__country {
+      width: 50rem;
+    }
+
+    &__small-inputs {
+      display: flex;
+    }
+
+    &__city,
+    &__zipcode {
+      & input {
+        width: 18rem;
+      }
+    }
+
+    &__zipcode {
+      margin-left: 4.7rem;
+    }
+
+    &__button {
+      display: flex;
+      justify-content: flex-end;
+
+      & button {
+        background: $color-bg-btn;
+        border: 0.1rem solid;
+        border-color: $color-border-btn;
+        color: $color-black;
+        font-weight: 700;
+        font-size: 1.8rem;
+        border-radius: 0.2rem;
+        width: 15rem;
+        height: 3rem;
+      }
+    }
+  }
+}

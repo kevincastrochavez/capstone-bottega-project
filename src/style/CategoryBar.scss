@@ -1,0 +1,52 @@
+.categories {
+  grid-column: content-s/content-e;
+  grid-row: content-s/content-e;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+
+  &__options {
+    margin-top: 5rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-title {
+      margin-bottom: 3rem;
+    }
+
+    &-links {
+      position: absolute;
+      left: 2rem;
+      top: 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 55rem;
+
+      &-link {
+        cursor: pointer;
+        height: 100%;
+        width: 8rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background-color: $color-blue;
+          border: 0.1rem solid lightgray;
+          border-radius: 0.5rem;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+.color-text {
+  color: $color-white;
+  background-color: $color-blue;
+  border: 0.1rem solid lightgray;
+  border-radius: 0.5rem;
+}

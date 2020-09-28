@@ -1,0 +1,38 @@
+.sign-up {
+  grid-column: content-s/content-e;
+  grid-row: content-s/content-e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-wrapper {
+    @include box-shadow;
+    @include white-box;
+    width: 70%;
+  }
+
+  &__title {
+    text-align: end;
+    margin: 2rem 2rem 3rem 0;
+    font-size: 3rem;
+  }
+
+  &-form {
+    display: grid;
+    justify-items: center;
+    grid-gap: 2rem;
+
+    &__create-account {
+      margin-top: 2rem;
+    }
+
+    &__text-links {
+      margin: 2rem 0;
+
+      & a {
+        color: inherit;
+      }
+    }
+  }
+}

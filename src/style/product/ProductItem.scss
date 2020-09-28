@@ -1,0 +1,53 @@
+.product {
+  @include box-shadow;
+  @include white-box;
+  width: 15rem;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 1.8rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    @include box-shadow-hover;
+  }
+
+  &__img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+  }
+
+  &__info {
+    height: 100%;
+
+    &-shown {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+
+      &-button {
+        @include yellow-button;
+        height: 3rem;
+        width: 3rem;
+        font-size: 3rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      & p {
+        font-size: 2rem;
+        color: black;
+      }
+    }
+
+    &-hover {
+      font-size: 1.4rem;
+      margin-top: 1.5rem;
+      color: black;
+    }
+  }
+}

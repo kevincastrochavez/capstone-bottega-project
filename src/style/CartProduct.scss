@@ -1,0 +1,46 @@
+.cartProduct {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  & img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+  }
+
+  &__info {
+    width: 25rem;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-wrapper {
+      height: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &-name {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    &-price {
+      font-size: 2rem;
+      display: flex;
+    }
+  }
+}
+
+.fa-trash {
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-red;
+  }
+}
